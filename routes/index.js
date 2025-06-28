@@ -3,7 +3,7 @@ const app = express();
 const router = express.Router();
 
 
-//routes logic will come here.// Import routes (assuming you have separate route files)
+// Import routes (assuming you have separate route files)
 const habitRoutes = require("../routes/habit.routes");
 const recurringTaskRoutes = require("../routes/recurringTask.routes");
 const taskRoutes = require("../routes/task.routes");
