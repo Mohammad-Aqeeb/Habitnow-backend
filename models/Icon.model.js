@@ -1,4 +1,4 @@
-// Habit.js (Mongoose Schema)
+// Habit.model.js
 const mongoose = require('mongoose');
 
 const IconSchema = new mongoose.Schema({
