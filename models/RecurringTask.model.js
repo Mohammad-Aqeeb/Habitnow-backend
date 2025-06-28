@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const RecurringTaskSchema = new mongoose.Schema({
     userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
     category: {  type: mongoose.Schema.Types.ObjectId, ref: 'Category', required: true },
-        name: { type: String, required: true },
+    name: { type: String, required: true },
     description: { type: String },
     frequency: { type: String },
     customFrequency: { type: Object },
