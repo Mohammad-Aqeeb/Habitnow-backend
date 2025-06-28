@@ -25,7 +25,7 @@ const checkTaskLimit = async (req, res, next) => {
     }
 };
 
-// -------------------- CREATE TASK --------------------
+//CREATE TASK
 router.post('/tasks',authenticateToken, checkTaskLimit, async (req, res) => {
     const { name, description, date, time, reminders, priority } = req.body;
     const userId = req.user.id;
