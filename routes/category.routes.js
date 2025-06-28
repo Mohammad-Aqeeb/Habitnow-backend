@@ -4,6 +4,7 @@ const Category = require('../models/Category.model');
 const Icon = require('../models/Icon.model');
 const Color = require('../models/Color.model');
 const { authenticateToken } = require('../middlewares/auth.middleware');
+
 // Retrieve all categories (default and user-specific custom)
 router.get('/', authenticateToken, async (req, res) => {
     try {
